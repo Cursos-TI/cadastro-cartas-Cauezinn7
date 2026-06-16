@@ -6,10 +6,75 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-
+   char estado1,estado2, codigo[5],codigo2[5],nomedcidade2[20], nomedcidade[20];
+   int populacao,populacao2,turisticos2, turisticos;
+   float area,area2,pib2, pib;
   // Área para entrada de dados
 
+    printf("CARTA 1\n");
+  printf(" Qual estado:  \n ");
+  scanf(" %c", &estado1);
+
+  printf("Digite o codigo da sua carta:\n");
+  scanf("%s", codigo);
+
+   printf("Digite o nome da cidade:\n"); 
+   scanf( "%s", nomedcidade);
+
+  printf("Digite a populacao da cidade:\n");
+  scanf("%d", &populacao);
+
+  printf("Digite a area da cidade:\n");
+  scanf("%f", &area);
+
+  printf("Digite o PIB da cidade:\n");
+  scanf("%f", &pib);
+
+  printf("Digite o numero de pontos turisticos:\n");
+  scanf("%d", &turisticos);
+
+   printf("CARTA 2\n");
+  printf(" Qual estado:  \n ");
+  scanf(" %c", &estado2);
+
+  printf("Digite o codigo da sua carta:\n");
+  scanf("%s", codigo2);
+
+   printf("Digite o nome da cidade:\n"); 
+   scanf( "%s", nomedcidade2);
+
+  printf("Digite a populacao da cidade:\n");
+  scanf("%d", &populacao2);
+
+  printf("Digite a area da cidade:\n");
+  scanf("%f", &area2);
+
+  printf("Digite o PIB da cidade:\n");
+  scanf("%f", &pib2);
+
+  printf("Digite o numero de pontos turisticos:\n");
+  scanf("%d", &turisticos2);
+
+  
   // Área para exibição dos dados da cidade
+   printf("CARTA 1\n");
+   printf("Estado: %c\n", estado1);
+   printf("Codigo: %s\n", codigo);
+   printf("Nome da Cidade: %s\n", nomedcidade);
+   printf("Populacao: %d\n", populacao);
+   printf("Area: %.2f km\n", area);
+   printf("PIB: %.2f Bilhoes\n", pib);
+   printf("Numero de Pontos Turisticos: %d\n", turisticos);
+
+  
+   printf("CARTA 2\n");
+   printf("Estado: %c\n", estado2);
+   printf("Codigo: %s\n", codigo2);
+   printf("Nome da Cidade: %s\n", nomedcidade2);
+   printf("Populacao: %d\n", populacao2);
+   printf("Area: %.2f km\n", area2);
+   printf("PIB: %.2f Bilhoes\n", pib2);
+   printf("Numero de Pontos Turisticos: %d\n", turisticos2);
 
 return 0;
 } 
