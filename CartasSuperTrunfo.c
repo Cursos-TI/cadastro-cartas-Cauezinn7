@@ -8,7 +8,7 @@ int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
    char estado1,estado2, codigo[5],codigo2[5],nomedcidade2[20], nomedcidade[20];
    int populacao,populacao2,turisticos2, turisticos;
-   float area,area2,pib2, pib;
+   float area,area2,pib2, pib, densidade1, densidade2,percapita,percapita2;
   // Área para entrada de dados
 
     printf("CARTA 1\n");
@@ -55,6 +55,14 @@ int main() {
   printf("Digite o numero de pontos turisticos:\n");
   scanf("%d", &turisticos2);
 
+  densidade1 = (float) (populacao / area);
+  densidade2 = (float) (populacao2 / area2);
+
+  percapita = (float) (pib / populacao);
+  percapita2 = (float) (pib2 / populacao2);
+
+
+
   
   // Área para exibição dos dados da cidade
    printf("CARTA 1\n");
@@ -65,6 +73,8 @@ int main() {
    printf("Area: %.2f km\n", area);
    printf("PIB: %.2f Bilhoes\n", pib);
    printf("Numero de Pontos Turisticos: %d\n", turisticos);
+   printf("Densidade Populacional: %.3f\n", densidade1);
+   printf("PIB per Capita:%fReais\n", percapita);
 
   
    printf("CARTA 2\n");
@@ -75,6 +85,8 @@ int main() {
    printf("Area: %.2f km\n", area2);
    printf("PIB: %.2f Bilhoes\n", pib2);
    printf("Numero de Pontos Turisticos: %d\n", turisticos2);
+   printf("Densidade Populacional: %.3f\n", densidade2);
+   printf("PIB per Capita:%fReais\n", percapita2);
 
 return 0;
 } 
